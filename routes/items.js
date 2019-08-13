@@ -33,10 +33,14 @@ router.get('/:id', async (req, res) => {
 			.status(404)
 			.send({ message: "The item's description was not found" });
 			
-	const categoriesResp = await getCategories(data.category_id);
-	const categories = await mapCategoriesItem(categoriesResp);
-	const mappedData = {...await mapItemResponse(data, description), categories};
+	const mappedData = await getData(data,description);
 	res.send(mappedData);
 });
+
+const getData = async (data, description) => {
+	const categoriesResp = await getCategories(data.category_id);
+	const categories = await mapCategoriesItem(categoriesResp);
+	return {...await mapItemResponse(data, description), categories};
+}
 
 module.exports = router;
