@@ -1,6 +1,6 @@
 ## App available on
 
-[Buscador Mercado Libre](https://github.com/jpacareu/meli-backend-app)
+[Buscador Mercado Libre](https://meli-backend-app.herokuapp.com/)
 
 ## Available Scripts
 
