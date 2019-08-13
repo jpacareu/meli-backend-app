@@ -1,0 +1,7 @@
+{
+  "authorEndpoint": {
+    "name": "Javier",
+    "lastname": "Pacareu"
+  },
+  "apiBase": "https://api.mercadolibre.com"
+}
