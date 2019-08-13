@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index",
     "test:cov": "jest --watchAll --verbose --coverage --runInBand",
-    "test": "jest --watchAll --verbose",
+    "test": "jest --watchAll --verbose --runInBand",
     "format": "prettier --trailing-comma none --tab-width 2 --use-tabs --single-quote true --jsx-bracket-same-line --write --semi true '**/*.js'",
     "debug": "node --nolazy --inspect-brk=9229 index.js"
   },
